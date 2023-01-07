@@ -5,7 +5,7 @@ je vais faire une petite liste de recettes que j'utilise ou que j'aime bien pour
 ## Roadmap
 
 - [X] créer la base de l'app avec astro
-- [ ] héberger le code sur Github
+- [x] héberger le code sur Github
 - [ ] ajouter les premières recettes 
 - [ ] faire un peu beau : 
     * [ ] page d'acceuil avec présentation de l'app
