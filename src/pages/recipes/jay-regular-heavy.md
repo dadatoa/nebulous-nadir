@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Jay Regular's Heavy
 monochrome: true
 camera: x100v 
