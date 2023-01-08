@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: dadatoa/dadatoa.github.io
+  repo: dadatoa/nebulous-nadir
   branch: develop
 
 media_library:
@@ -19,36 +19,51 @@ slug:
 
 collections:
   # recettes
-  - name: "recettes"
-    label: "recettes"
-  # Blog
-  - name: "blog"
-    label: "Post"
-    folder: "_posts/"
+  - name: "recipes"
+    label: "recette"
+    folder: "src/pages/recipes/"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string", hint:"" }
-      - { label: "Mise à jour", name: "update", widget: "datetime", date_format: "DD.MM.YYYY", required: false }
-      - { label: "Publish Date", name: "date", widget: "datetime", date_format: "DD.MM.YYYY" }
-      - { label: "Layout", name: "layout", widget: "select", options: ["post","home"], default: "post"}
-      - { label: "Tags", name: "tags", widget: "list"}
-      - { label: "Body", name: "body", widget: "markdown" }
-  # Photos
-  - name: 'images'
-    label: 'Images'
-    editor:
-      preview: false
-    files:
-      - label: 'Photos'
-        name: 'photos'
-        file: '_data/photos.yml'
+      - { label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/MarkdownPostLayout.astro"}
+      - { label: "Title", name: "title", widget: "string", hint: "" }
+      - { label: "Monochrome", name: "monochrome", widget: "boolean", default: "false"}
+      - { label: "Camera", name: "camera", widget: "string"}
+      - { label: "Capteur", name: "sensor", widget: "string"}
+      - { label: "simualtion", name: "film_sim", widget: "string"}
+      - { label: "Dynamic Range", name: "dynamic_range", widget: "string"}
+      - { label: "Color Chrome", name: "color_chrome", widget: "string", required: "false" }
+      - { label: "Color Chrome FX blue", name: "color_chromeFXblue", widget: "string", required: "false" }
+      -  label: "Grain"
+         name: "grain"
+         widget: "object"
+         collapse: "false"
+         fields:
+          - { label: "Effet", name: "effect", widget: "string" }
+          - { label : "Taille", name: "size", widget: "string" }
+      - label: "Balance des blancs"
+        name: "white_balance"
+        widget: "object"
+        collapse: "false"
         fields:
-          - label: 'Photo Items'
-            name: 'items'
-            widget: 'list'
-            fields:
-              - { label: Toto, name: toto, widget: string }
-              - { label: prout, name: image, widget: image }
+          - { label: "Preset", name: "preset", widget: "string" }
+          - { label: "Rouge", name: "red", widget: "number", value_type: "int", min: "-9", max: "9", defaul: "0" }
+          - { label: "Bleu", name: "blue", widget: "number", value_type: "int", min: "-9", max: "9", defaul: "0" }
+      - { label: "Tons clairs", name: "highlights", widget: "number", value_type: "int", min: "-4", max: "4", defaul: "0" }
+      - { label: "Ombres", name: "shadows", widget: "number", value_type: "int", min: "-4", max: "4", defaul: "0" }
+      - { label: "Couleur", name: "color", widget: "number", value_type: "int", min: "-4", max: "4", defaul: "0" }
+      - { label: "Sharpness", name: "sharpness", widget: "number", value_type: "int", min: "-4", max: "4", defaul: "0" }
+      - { label: "Réduction du bruit", name: "noise_reduction", widget: "number", value_type: "int", min: "-2", max: "2", defaul: "0" } 
+      - { label: "Clarity", name: "clarity", widget: "number", value_type: "int", min: "-4", max: "4", required: "false" }
+      - { label: "Créateur", name: "chef", widget: "string" }
+      - label: "source"
+        name: "source"
+        widget: "object"
+        required: "false"
+        collapse: "true"
+        fields:
+          - { label: "type", name: "type", widget: "string", required: "false" }
+          - { lable: "url", name: "url", widget: "string", required: "false" }
+      - { label: "Body", name: "body", widget: "markdown" }

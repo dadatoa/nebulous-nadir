@@ -22,7 +22,6 @@ sharpness: -2
 noise_reduction: -1
 chef: JayRegular
 source:
- link:
   type: youtube
   url: https://youtu.be/tjn7lZCMhFA
 ---

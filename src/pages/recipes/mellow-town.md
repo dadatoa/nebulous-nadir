@@ -23,7 +23,6 @@ noise_reduction: 0
 clarity: +1
 chef: JayRegular
 source:
- link:
   type: youtube
   url: https://youtu.be/tjn7lZCMhFA
 ---
