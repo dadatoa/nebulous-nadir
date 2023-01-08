@@ -1,5 +1,6 @@
 ---
-title: Jay Regular's Neue View
+layout: ../../layouts/MarkdownPostLayout.astro
+title: Neue View
 monochrome: false
 camera: x100v 
 sensor: xtrans4
@@ -17,8 +18,8 @@ color: 0
 sharpness: +1
 noise_reduction: -4
 clarity: +2
+chef: JayRegular
 source:
- chef: JayRegular
  link:
   type: youtube
   url: https://youtu.be/tjn7lZCMhFA

@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Recipes from '../components/Recipes.astro';
+const allRecipes = await Astro.glob('../pages/recipes/*.md');
+const pageTitle = "recettes";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+	<h2>mes super recettes</h2>
+	<ul>
+		{allRecipes.map((recipe) => <Recipes url={recipe.url} title={recipe.frontmatter.title} chef={recipe.frontmatter.chef}/>)}
+	</ul>
+</BaseLayout>

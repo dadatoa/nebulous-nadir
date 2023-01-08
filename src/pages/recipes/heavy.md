@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: Jay Regular's Heavy
+title: Heavy
 monochrome: true
 camera: x100v 
 sensor: xtrans4
@@ -20,8 +20,8 @@ shadows: +3
 sharpness: 0
 noise_reduction: -4
 clarity: +1
-source:
- chef: JayRegular
+chef: JayRegular
+source: 
  link:
   type: youtube
   url: https://youtu.be/tjn7lZCMhFA

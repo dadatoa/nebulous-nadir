@@ -1,5 +1,6 @@
 ---
-title: Jay Regular's Urban Mood
+layout: ../../layouts/MarkdownPostLayout.astro
+title: Urban Mood
 monochrome: false
 sensor: xtrans4
 camera: x100v
@@ -19,8 +20,8 @@ shadows: +3
 color:	+2
 sharpness: -2
 noise_reduction: -1
+chef: JayRegular
 source:
- chef: JayRegular
  link:
   type: youtube
   url: https://youtu.be/tjn7lZCMhFA
