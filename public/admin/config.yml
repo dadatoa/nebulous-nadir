@@ -34,8 +34,8 @@ collections:
       - { label: "Capteur", name: "sensor", widget: "string"}
       - { label: "simualtion", name: "film_sim", widget: "string"}
       - { label: "Dynamic Range", name: "dynamic_range", widget: "string"}
-      - { label: "Color Chrome", name: "color_chrome", widget: "string", required: "false" }
-      - { label: "Color Chrome FX blue", name: "color_chromeFXblue", widget: "string", required: "false" }
+      - { label: "Color Chrome", name: "color_chrome", widget: "string", required: false }
+      - { label: "Color Chrome FX blue", name: "color_chromeFXblue", widget: "string", required: false }
       -  label: "Grain"
          name: "grain"
          widget: "object"
@@ -56,14 +56,14 @@ collections:
       - { label: "Couleur", name: "color", widget: "number", value_type: "int", min: -4, max: 4, defaul: 0 }
       - { label: "Sharpness", name: "sharpness", widget: "number", value_type: "int", min: -4, max: 4, defaul: 0 }
       - { label: "Réduction du bruit", name: "noise_reduction", widget: "number", value_type: "int", min: -2, max: 2, defaul: 0 } 
-      - { label: "Clarity", name: "clarity", widget: "number", value_type: "int", min: -4, max: 4, required: "false" }
+      - { label: "Clarity", name: "clarity", widget: "number", value_type: "int", min: -4, max: 4, required: false }
       - { label: "Créateur", name: "chef", widget: "string" }
       - label: "source"
         name: "source"
         widget: "object"
-        required: "false"
+        required: false
         collapse: "true"
         fields:
-          - { label: "type", name: "type", widget: "string", required: "false" }
-          - { lable: "url", name: "url", widget: "string", required: "false" }
+          - { label: "type", name: "type", widget: "string", required: false }
+          - { lable: "url", name: "url", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
