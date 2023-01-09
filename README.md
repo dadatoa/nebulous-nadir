@@ -4,11 +4,11 @@ je vais faire une petite liste de recettes que j'utilise ou que j'aime bien pour
 
 ## Roadmap
 
-- [X] créer la base de l'app avec astro
+- [x] créer la base de l'app avec astro
 - [x] héberger le code sur Github
+- [x] publier sur netlifycms
 - [ ] ajouter les premières recettes 
 - [ ] faire un peu beau : 
     * [ ] page d'acceuil avec présentation de l'app
     * [ ] page avec liste des recettes
     * [ ] page par recette
-- [ ] publier sur netlifycms
