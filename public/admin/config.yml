@@ -11,7 +11,7 @@ media_library:
 # media_folder: static/images/uploads
 
 # Publish mode
-#publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 
 # Slug - personnalisation des liens
 slug:
@@ -55,7 +55,7 @@ collections:
       - { label: "Ombres", name: "shadows", widget: "number", value_type: "int", min: -4, max: 4, defaul: 0 }
       - { label: "Couleur", name: "color", widget: "number", value_type: "int", min: -4, max: 4, defaul: 0 }
       - { label: "Sharpness", name: "sharpness", widget: "number", value_type: "int", min: -4, max: 4, defaul: 0 }
-      - { label: "Réduction du bruit", name: "noise_reduction", widget: "number", value_type: "int", min: -2, max: 2, defaul: 0 } 
+      - { label: "Réduction du bruit", name: "noise_reduction", widget: "number", value_type: "int", min: -4, max: 4, defaul: 0 } 
       - { label: "Clarity", name: "clarity", widget: "number", value_type: "int", min: -4, max: 4, required: false }
       - { label: "Créateur", name: "chef", widget: "string" }
       - label: "source"
