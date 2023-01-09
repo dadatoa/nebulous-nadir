@@ -29,7 +29,7 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/MarkdownPostLayout.astro"}
       - { label: "Title", name: "title", widget: "string", hint: "" }
-      - { label: "Monochrome", name: "monochrome", widget: "boolean", default: "false"}
+      - { label: "Monochrome", name: "monochrome", widget: "boolean", default: false }
       - { label: "Camera", name: "camera", widget: "string"}
       - { label: "Capteur", name: "sensor", widget: "string"}
       - { label: "simualtion", name: "film_sim", widget: "string"}
@@ -49,14 +49,14 @@ collections:
         collapse: "false"
         fields:
           - { label: "Preset", name: "preset", widget: "string" }
-          - { label: "Rouge", name: "red", widget: "number", value_type: "int", min: "-9", max: "9", defaul: "0" }
-          - { label: "Bleu", name: "blue", widget: "number", value_type: "int", min: "-9", max: "9", defaul: "0" }
-      - { label: "Tons clairs", name: "highlights", widget: "number", value_type: "int", min: "-4", max: "4", defaul: "0" }
-      - { label: "Ombres", name: "shadows", widget: "number", value_type: "int", min: "-4", max: "4", defaul: "0" }
-      - { label: "Couleur", name: "color", widget: "number", value_type: "int", min: "-4", max: "4", defaul: "0" }
-      - { label: "Sharpness", name: "sharpness", widget: "number", value_type: "int", min: "-4", max: "4", defaul: "0" }
-      - { label: "Réduction du bruit", name: "noise_reduction", widget: "number", value_type: "int", min: "-2", max: "2", defaul: "0" } 
-      - { label: "Clarity", name: "clarity", widget: "number", value_type: "int", min: "-4", max: "4", required: "false" }
+          - { label: "Rouge", name: "red", widget: "number", value_type: "int", min: -9, max: 9, defaul: 0 }
+          - { label: "Bleu", name: "blue", widget: "number", value_type: "int", min: -9, max: 9, defaul: 0 }
+      - { label: "Tons clairs", name: "highlights", widget: "number", value_type: "int", min: -4, max: 4, defaul: 0 }
+      - { label: "Ombres", name: "shadows", widget: "number", value_type: "int", min: -4, max: 4, defaul: 0 }
+      - { label: "Couleur", name: "color", widget: "number", value_type: "int", min: -4, max: 4, defaul: 0 }
+      - { label: "Sharpness", name: "sharpness", widget: "number", value_type: "int", min: -4, max: 4, defaul: 0 }
+      - { label: "Réduction du bruit", name: "noise_reduction", widget: "number", value_type: "int", min: -2, max: 2, defaul: 0 } 
+      - { label: "Clarity", name: "clarity", widget: "number", value_type: "int", min: -4, max: 4, required: "false" }
       - { label: "Créateur", name: "chef", widget: "string" }
       - label: "source"
         name: "source"
