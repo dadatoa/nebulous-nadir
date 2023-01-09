@@ -1,7 +1,61 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Mon titre";
+import '../styles/global.css';
+const pageTitle = "Under Construction";
 ---
-<BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
-</BaseLayout>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <div class="top band"></div>
+    <div class="content">
+        <h1>{pageTitle}</h1>
+    </div>
+    <div class="bottom band"></div>
+  </body>
+  <style>
+    html {
+    background-color: hsla(50, 100%, 50%, 1);
+    }
+
+    body {
+    margin: 0 0;
+    width: 100%;
+    padding: 0;
+    line-height: 1.5;
+    }
+
+    h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 5rem;
+        font-weight: 700;
+    }
+
+    .band{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        width: 100vw;
+        height: 5vh;
+        background-image: repeating-linear-gradient(
+            110deg, black, black 30px, hsla(50, 100%, 50%, 1) 30px, hsla(50, 100%, 50%, 1) 60px
+        );
+    }
+     .top{
+        position: fixed;
+        top: 0;
+     }
+     .bottom{
+        position: fixed;
+        bottom: 0;
+     }
+
+     .content{
+        position: fixed;
+        bottom: 20vh;
+     }
+  </style>
+</html>
